@@ -1,8 +1,15 @@
-# RLM Serving
+<h1 align="center">RLM Serving</h1>
 
-<p align="left">
+<p align="center">
+  <strong>Official code for the paper "Reasoning Language Model Inference Serving Unveiled: An Empirical Study"</strong>
+</p>
+
+<p align="center">
   <a href="https://lqinfdim.github.io/project/rllm-serving/index.html">
     <img src="https://img.shields.io/badge/Project-Homepage-2ea44f?style=flat-square&logo=githubpages&logoColor=white" alt="Project Homepage" />
+  </a>
+  <a href="https://github.com/lqinfdim/RLMServing">
+    <img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="Code" />
   </a>
   <a href="https://arxiv.org/abs/2510.18672">
     <img src="https://img.shields.io/badge/arXiv-Paper-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv" />
@@ -12,27 +19,24 @@
   </a>
 </p>
 
+## Project Status
+
+- [x] Core benchmark pipeline is available.
+- [x] Paper links and citation are available.
+- [ ] Clean up and release final experiment scripts.
+- [ ] Add complete reproduction guide with exact commands and expected outputs.
+- [ ] Add checkpoint/model release notes.
+- [ ] Add API and config documentation.
+
 ## Paper
 
 - **Title**: `Reasoning Language Model Inference Serving Unveiled: An Empirical Study`
 - **Authors**: `Qi Li, Junpan Wu, Xiang Liu, Yuxin Wang, Zeyu Li, Zhenheng Tang, Yuhan Chen, Shaohuai Shi, Xiaowen Chu`
 - **Venue**: `ICLR 2026`
-- **Project Homepage**: `https://lqinfdim.github.io/project/rllm-serving/index.html`
-- **arXiv**: `https://arxiv.org/abs/2510.18672`
-- **OpenReview**: `https://openreview.net/forum?id=6CGjZYp6ft`
-
-### Citation (BibTeX)
-
-```bibtex
-  @inproceedings{
-              rllm-serving,
-              title={Reasoning Language Model Inference Serving Unveiled: An Empirical Study},
-              author={Li, Qi and Wu, Junpan and Liu, Xiang and Wang, Yuxin and Li, Zeyu and Tang, Zhenheng and Chen, Yuhan and Shi, Shaohuai and Chu, Xiaowen},
-              booktitle={The Fourteenth International Conference on Learning Representations},
-              year={2026},
-              url={https://openreview.net/forum?id=6CGjZYp6ft}
-}
-```
+- **Project Homepage**: [RLM Serving Homepage](https://lqinfdim.github.io/project/rllm-serving/index.html)
+- **Code**: [GitHub Repository](https://github.com/lqinfdim/RLMServing)
+- **arXiv**: [arXiv:2510.18672](https://arxiv.org/abs/2510.18672)
+- **OpenReview**: [OpenReview Discussion](https://openreview.net/forum?id=6CGjZYp6ft)
 
 ## Environment
 
@@ -67,3 +71,17 @@ pip install -r req.txt
 ```
 
 `environment.yml` only contains Conda packages. `req.txt` contains the Python packages installed by `pip`.
+
+
+### Citation (BibTeX)
+
+```bibtex
+  @inproceedings{
+              rllm-serving,
+              title={Reasoning Language Model Inference Serving Unveiled: An Empirical Study},
+              author={Li, Qi and Wu, Junpan and Liu, Xiang and Wang, Yuxin and Li, Zeyu and Tang, Zhenheng and Chen, Yuhan and Shi, Shaohuai and Chu, Xiaowen},
+              booktitle={The Fourteenth International Conference on Learning Representations},
+              year={2026},
+              url={https://openreview.net/forum?id=6CGjZYp6ft}
+}
+```
