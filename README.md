@@ -1,7 +1,7 @@
 <h1 align="center">RLM Serving</h1>
 
 <p align="center">
-  <strong>Official code for the paper "Reasoning Language Model Inference Serving Unveiled: An Empirical Study"</strong>
+  <strong>This is the Official code for the ICLR 2026 paper "Reasoning Language Model Inference Serving Unveiled: An Empirical Study"</strong>
 </p>
 
 <p align="center">
@@ -25,8 +25,6 @@
 - [x] Paper links and citation are available.
 - [ ] Clean up and release final experiment scripts.
 - [ ] Add complete reproduction guide with exact commands and expected outputs.
-- [ ] Add checkpoint/model release notes.
-- [ ] Add API and config documentation.
 
 ## Paper
 
