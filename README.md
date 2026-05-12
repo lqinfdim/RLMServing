@@ -1,7 +1,7 @@
 <h1 align="center">RLM Serving</h1>
 
 <p align="center">
-  <strong>This is the Official code for the ICLR 2026 paper "Reasoning Language Model Inference Serving Unveiled: An Empirical Study"</strong>
+  <strong>Official code for the ICLR 2026 paper "Reasoning Language Model Inference Serving Unveiled: An Empirical Study"</strong>
 </p>
 
 <p align="center">
