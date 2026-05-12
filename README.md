@@ -1,4 +1,4 @@
-# rllm-serving
+# RLM Serving
 
 <p align="left">
   <a href="https://lqinfdim.github.io/project/rllm-serving/index.html">
@@ -15,7 +15,7 @@
 ## Paper
 
 - **Title**: `Reasoning Language Model Inference Serving Unveiled: An Empirical Study`
-- **Authors**: `<AUTHOR_1>, <AUTHOR_2>, <AUTHOR_3>, ...`
+- **Authors**: `Qi Li, Junpan Wu, Xiang Liu, Yuxin Wang, Zeyu Li, Zhenheng Tang, Yuhan Chen, Shaohuai Shi, Xiaowen Chu`
 - **Venue**: `ICLR 2026`
 - **Project Homepage**: `https://lqinfdim.github.io/project/rllm-serving/index.html`
 - **arXiv**: `https://arxiv.org/abs/2510.18672`
@@ -31,7 +31,7 @@
               booktitle={The Fourteenth International Conference on Learning Representations},
               year={2026},
               url={https://openreview.net/forum?id=6CGjZYp6ft}
-              }
+}
 ```
 
 ## Environment
