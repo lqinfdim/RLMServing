@@ -23,7 +23,7 @@
 
 - [x] Core benchmark pipeline is available.
 - [x] Paper links and citation are available.
-- [ ] Clean up and release final experiment scripts.
+- [x] Clean and release pilot study scripts for RLLM serving.
 - [ ] Add complete reproduction guide with exact commands and expected outputs.
 
 ## Paper
@@ -70,6 +70,41 @@ pip install -r req.txt
 
 `environment.yml` only contains Conda packages. `req.txt` contains the Python packages installed by `pip`.
 
+## Pilot Study Scripts (RLLM + vLLM)
+
+The cleaned pilot scripts are in `pilot-study/` and are intended for public release.
+
+### Script responsibilities
+
+- `pilot-study/start-vllm-service.sh`: starts and stops `vllm serve`, then orchestrates dataset-level benchmark runs.
+- `pilot-study/benchmark-rllm.sh`: runs the actual benchmark by calling `main.py` over datasets and token budgets.
+- `pilot-study/7b-rllm.sh`: preset entrypoint for DeepSeek-R1-Distill-Qwen-7B.
+- `pilot-study/14b-rllm.sh`: preset entrypoint for DeepSeek-R1-Distill-Qwen-14B.
+- `pilot-study/32b-rllm.sh`: preset entrypoint for DeepSeek-R1-Distill-Qwen-32B.
+
+### How to run
+
+From repository root:
+
+```bash
+bash pilot-study/7b-rllm.sh
+bash pilot-study/14b-rllm.sh
+bash pilot-study/32b-rllm.sh
+```
+
+### Environment behavior for pilot scripts
+
+- Default mode uses `conda run -n <your_env> ...` inside scripts.
+- You do not need to manually run `conda activate` in default mode.
+- Set environment variable `RLLM_CONDA_ENV` or pass `--conda_env <your_env>`.
+- Set environment variable `RLLM_API_KEY` or pass `--api_key <your_key>`.
+- You can disable conda wrapping with `--use_conda_run false` and then run in your currently active environment.
+
+### Outputs
+
+- Server logs: `pilot-study/logs/server/`
+- Benchmark raw outputs: `pilot-study/outputs/`
+- Benchmark CSV logs: `pilot-study/logs/`
 
 ### Citation (BibTeX)
 

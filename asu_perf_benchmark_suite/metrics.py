@@ -191,7 +191,7 @@ async def completion_with_backoff(session: aiohttp.ClientSession, input_prompt: 
 
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': f'Bearer infdim' # Consider making configurable via args
+        'Authorization': f'Bearer {args.api_key}'
     }
 
     data = {

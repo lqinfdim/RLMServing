@@ -40,6 +40,8 @@ def get_args():
                         help='Port number for the API service.')
     parser.add_argument('--request_timeout', type=int, default=600,
                         help='Timeout in seconds for each individual API request.')
+    parser.add_argument('--api_key', type=str, default=os.getenv("RLLM_API_KEY", "rllm-key"),
+                        help='API key used for Authorization header when calling the serving endpoint.')
 
     # --- Benchmark Control ---
     parser.add_argument('--batch_size', type=int, default=16,
